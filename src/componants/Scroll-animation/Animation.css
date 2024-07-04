@@ -1,0 +1,10 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: Slide up effect */
+  transition: opacity 1s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

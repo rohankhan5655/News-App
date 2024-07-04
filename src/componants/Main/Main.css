@@ -1,0 +1,6 @@
+/* Custom CSS */
+@media (min-width: 2000px) {
+  .width-change {
+    max-width: 65vw; /* Optionally limit maximum width */
+  }
+}
