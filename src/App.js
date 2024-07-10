@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./componants/Loading component/Loading";
 import Footer from "./componants/Footer/Footer";
-import Main from "./componants/Main/Main";
+
 import Navbar from "./componants/Navbar/Navbar";
 import "./App.css";
 import News from "./componants/Main/News";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
+import Main from "./componants/Main/Main";
 import Section3 from "./componants/Main/Section3";
 import Contact from "./componants/Contact";
 
@@ -33,10 +33,10 @@ function App() {
           <Navbar />
           <hr />
           <Routes>
-            <Route path="/News" element={<News />} />
-            <Route path="/Home" element={<Main />} />
+            <Route path="/News-App/news" element={<News />} />
+            <Route path="/News-App/" element={<Main />} />
             <Route
-              path="/About"
+              path="/News-App/About"
               element={
                 <Section3
                   id="section3"
@@ -51,7 +51,7 @@ function App() {
               }
             />
             <Route
-              path="/Contact"
+              path="/News-App/Contact"
               element={
                 <Contact
                   heading={"Get in touch"}
@@ -63,8 +63,7 @@ function App() {
                 />
               }
             />
-
-            <Route path="/" element={<Navigate replace to="/Home" />} />
+            <Route path="/" element={<Navigate replace to="/News-App" />} />
           </Routes>
           <Footer />
         </BrowserRouter>

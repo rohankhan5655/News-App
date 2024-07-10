@@ -22,7 +22,7 @@ function Footer() {
             <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
               <li>
                 <Link
-                  to="/About"
+                  to="/News-App/About"
                   className="flex items-center border-b-2 border-transparent  hover:border-red-500 mx-2 sm:mx-4 md:mx-6"
                 >
                   <span className="inline-flex items-center justify-center">
@@ -32,7 +32,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="/Contact"
+                  to="/News-App/Contact"
                   className="flex items-center border-b-2 border-transparent  hover:border-red-500 mx-2 sm:mx-4 md:mx-6"
                 >
                   <span className="inline-flex items-center justify-center">
@@ -42,7 +42,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  to="/News"
+                  to="/News-App/News"
                   className="flex items-center border-b-2 border-transparent  hover:border-red-500 mx-2 sm:mx-4 md:mx-6"
                 >
                   <span className="inline-flex items-center justify-center">

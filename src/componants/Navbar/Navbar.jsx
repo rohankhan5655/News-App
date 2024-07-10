@@ -8,9 +8,9 @@ function Navbar() {
     <nav className="bg-black shadow dark:bg-black-800">
       <div className="container flex justify-center p-6 mx-auto text-white capitalize dark:text-white-300">
         <NavLink
-          to="/Home"
+          to="/News-App/"
           className={`flex items-center text-white border-b-2 mx-2 sm:mx-3 md:mx-4 lg:mx-5 ${
-            location.pathname === "/Home"
+            location.pathname === "/News-App/"
               ? "border-red-500 font-bold"
               : "border-transparent"
           }`}
@@ -19,9 +19,9 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/About"
+          to="/News-App/About"
           className={`flex items-center text-white border-b-2 mx-2 sm:mx-3 md:mx-4 lg:mx-5 ${
-            location.pathname === "/About"
+            location.pathname === "/News-App/About"
               ? "border-red-500 font-bold"
               : "border-transparent"
           }`}
@@ -30,9 +30,9 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/Contact"
+          to="/News-App/Contact"
           className={`flex items-center text-white border-b-2 mx-2 sm:mx-3 md:mx-4 lg:mx-5 ${
-            location.pathname === "/Contact"
+            location.pathname === "/News-App/Contact"
               ? "border-red-500 font-bold"
               : "border-transparent"
           }`}
@@ -41,9 +41,9 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/News"
+          to="/News-App/News"
           className={`flex items-center text-white border-b-2 mx-2 sm:mx-3 md:mx-4 lg:mx-5 ${
-            location.pathname === "/News"
+            location.pathname === "/News-App/News"
               ? "border-red-500 font-bold"
               : "border-transparent"
           }`}

@@ -37,7 +37,7 @@ const Main = () => {
                     npm run.
                   </p>
                   <Link
-                    to="/News"
+                    to="/News-App/News"
                     className="bg-red-800 text-white py-4 px-12 rounded-lg inline-block"
                   >
                     Check News!

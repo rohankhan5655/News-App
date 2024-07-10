@@ -5,18 +5,18 @@ import Errorpage from "./Errorpage";
 import Dropbutton from "./Dropbutton";
 import Card from "./Card";
 
-const News = () => {
+const News = (props) => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const [category, setCategory] = useState("business");
-
+  const apiKey = process.env.REACT_APP_NEWS_API;
   useEffect(() => {
     const fetchArticles = async () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=26a371a7f6c949a5bbac130d92272793&page=${page}&pageSize=20`
+          `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${apiKey}&page=${page}&pageSize=8`
         );
         const data = await response.json();
         if (data && data.articles) {
